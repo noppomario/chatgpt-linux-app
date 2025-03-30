@@ -1,5 +1,8 @@
 # ChatGPT for Linux
 
+> 🤖 **注意** 🤖  
+> このリポジトリの内容は基本的にすべてAIによって作成されています
+
 ChatGPTをLinux向けデスクトップアプリケーションとして提供するプロジェクトです。TauriフレームワークとWebViewを使用して実装されています。
 
 ## 機能
@@ -22,49 +25,33 @@ ChatGPTをLinux向けデスクトップアプリケーションとして提供�
 ### インストール手順
 
 1. リポジトリのクローン:
-```bash
-git clone https://github.com/noppomario/chatgpt-linux-app.git
-cd chatgpt-linux-app
-```
+
+   ```bash
+   git clone https://github.com/noppomario/chatgpt-linux-app.git
+   cd chatgpt-linux-app
+   ```
 
 2. 依存関係のインストール:
-```bash
-npm install
-```
+
+   ```bash
+   npm install
+   ```
 
 3. 開発モードで実行:
-```bash
-npm run tauri dev
-```
+
+   ```bash
+   npm run tauri dev
+   ```
 
 4. ビルド:
-```bash
-npm run tauri build
-```
 
-## 実装済み機能
-
-1. ファイル整理
-   - [x] プロジェクト構造の確認
-   - [x] .gitignoreの更新
-   - [x] 不要なファイルの削除
-
-2. ドキュメント作成
-   - [x] README.mdの作成（基本情報）
-   - [x] インストール手順の追加
-   - [x] トラブルシューティングガイドの追加予定
-
-3. ライセンス
-   - [x] MITライセンスの採用
-   - [x] LICENSE.mdファイルの作成
-
-4. リポジトリ設定
-   - [x] GitHub Actionsワークフローの設定
-   - [x] Issue・PRテンプレートの作成
+   ```bash
+   npm run tauri build
+   ```
 
 ## ライセンス
 
-このプロジェクトは[MITライセンス](https://github.com/noppomario/chatgpt-linux-app/blob/main/LICENSE.md)の下で公開されています。
+このプロジェクトは[MITライセンス](https://github.com/noppomario/chatgpt-linux-app/blob/main/LICENSE)の下で公開されています。
 
 ## 貢献
 
