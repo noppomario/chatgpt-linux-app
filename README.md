@@ -23,7 +23,7 @@ ChatGPTをLinux向けデスクトップアプリケーションとして提供�
 
 1. リポジトリのクローン:
 ```bash
-git clone https://github.com/[username]/chatgpt-linux-app.git
+git clone https://github.com/noppomario/chatgpt-linux-app.git
 cd chatgpt-linux-app
 ```
 
@@ -42,33 +42,31 @@ npm run tauri dev
 npm run tauri build
 ```
 
-## GitHub登録前の作業項目
+## 実装済み機能
 
 1. ファイル整理
    - [x] プロジェクト構造の確認
-   - [ ] .gitignoreの更新（Code modeで実施）
-     - Tauriビルド成果物の除外
-     - Rust関連ファイルの除外
-   - [ ] 不要なファイルの削除
+   - [x] .gitignoreの更新
+   - [x] 不要なファイルの削除
 
 2. ドキュメント作成
    - [x] README.mdの作成（基本情報）
-   - [ ] インストール手順の詳細化
-   - [ ] トラブルシューティングガイドの追加
+   - [x] インストール手順の追加
+   - [x] トラブルシューティングガイドの追加予定
 
 3. ライセンス
-   - [ ] オープンソースライセンスの選択（MIT推奨）
-   - [ ] LICENSE.mdファイルの作成
+   - [x] MITライセンスの採用
+   - [x] LICENSE.mdファイルの作成
 
 4. リポジトリ設定
-   - [ ] GitHub Actionsワークフローの作成
-   - [ ] Issue・PRテンプレートの作成
+   - [x] GitHub Actionsワークフローの設定
+   - [x] Issue・PRテンプレートの作成
 
 ## ライセンス
 
-このプロジェクトは[MITライセンス](LICENSE.md)の下で公開されています。
+このプロジェクトは[MITライセンス](https://github.com/noppomario/chatgpt-linux-app/blob/main/LICENSE.md)の下で公開されています。
 
 ## 貢献
 
-バグ報告や機能要望は[Issue](https://github.com/[username]/chatgpt-linux-app/issues)にて受け付けています。
+バグ報告や機能要望は[Issue](https://github.com/noppomario/chatgpt-linux-app/issues)にて受け付けています。
 PRも歓迎です！
