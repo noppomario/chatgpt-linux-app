@@ -15,35 +15,53 @@ ChatGPTをLinux向けデスクトップアプリケーションとして提供�
 
 ### 必要なソフトウェア
 
-- Node.js 16以上
-- Rust
+- Node.js 18以上
+- Rust 1.77.2以上
 - 以下のLinuxパッケージ:
-  - webkit2gtk4.1-devel
-  - libsoup3-devel
-  - その他Tauriの依存パッケージ
+  - webkit2gtk-4.0
+  - libwebkit2gtk-4.0-dev
+  - libgtk-3-dev
+  - libayatana-appindicator3-dev
+  - librsvg2-dev
+  - libsoup-3.0-dev
+  - libjavascriptcoregtk-4.1-dev
+  - libappindicator3-dev
+  - libasound2-dev
+  - libssl-dev
 
 ### インストール手順
 
-1. リポジトリのクローン:
+1. 必要なパッケージのインストール:
+
+   ```bash
+   # Debian/Ubuntu系
+   sudo apt-get update
+   sudo apt-get install webkit2gtk-4.0 libwebkit2gtk-4.0-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev libsoup-3.0-dev libjavascriptcoregtk-4.1-dev libappindicator3-dev libasound2-dev libssl-dev
+
+   # Fedora/RHEL系
+   sudo dnf install webkit2gtk4.1-devel gtk3-devel libappindicator-gtk3-devel librsvg2-devel libsoup3-devel javascriptcoregtk4.1-devel alsa-lib-devel openssl-devel
+   ```
+
+2. リポジトリのクローン:
 
    ```bash
    git clone https://github.com/noppomario/chatgpt-linux-app.git
    cd chatgpt-linux-app
    ```
 
-2. 依存関係のインストール:
+3. 依存関係のインストール:
 
    ```bash
    npm install
    ```
 
-3. 開発モードで実行:
+4. 開発モードで実行:
 
    ```bash
    npm run tauri dev
    ```
 
-4. ビルド:
+5. ビルド:
 
    ```bash
    npm run tauri build
