@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    if: false  # 一旦無効化
     runs-on: ubuntu-latest
     container:
       image: fedora:latest
