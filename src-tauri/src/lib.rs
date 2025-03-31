@@ -1,5 +1,3 @@
-use tauri::Manager;
-
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
   tauri::Builder::default()
@@ -14,6 +12,7 @@ pub fn run() {
 
       #[cfg(debug_assertions)]
       {
+        use tauri::Manager;
         let window = app.get_webview_window("main").unwrap();
         window.eval("window.location.href = 'https://chat.openai.com'").unwrap();
       }
